@@ -26,7 +26,8 @@
 //    NSString *clientId = @"12345";
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
-    NSString *urlString = [NSString stringWithFormat:@"%@?v=1&tid=UA-59762855-3&cid=12345&t=event&ec=Button&ea=Pressed&el=Test&ev=1", endpoint];
+//    NSString *urlString = [NSString stringWithFormat:@"%@?v=1&tid=UA-59762855-3&cid=12345&t=event&ec=Button&ea=Pressed&el=Test&ev=1", endpoint];
+    NSString *urlString = [NSString stringWithFormat:@"%@?v=1&tid=UA-59762855-3&cid=12345&t=screenview&an=AppName&av=1.1&aid=lol.id&aiid=lollol.id&cd=HomePage", endpoint];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     request.HTTPMethod = @"GET";
